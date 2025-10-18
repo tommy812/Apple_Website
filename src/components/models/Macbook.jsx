@@ -14,6 +14,13 @@ import useMacBookStore from "../../store/index.jsx";
 import {noChangeParts} from "../../constants/index.js";
 import {Color} from "three";
 
+/**
+ * Render a GLTF-based MacBook model that applies the current store color to most meshes and a video texture to the screen.
+ *
+ * The component loads "/models/macbook-transformed.glb", updates mesh material colors (excluding parts listed in noChangeParts) when the store color changes, and maps a video texture (from the store's texture value) onto the model's screen mesh.
+ * @param {object} props - Props forwarded to the root <group> element.
+ * @returns {JSX.Element} A react-three-fiber <group> containing the MacBook meshes and materials.
+ */
 export default function MacbookModel(props) {
     const {color, texture} = useMacBookStore()
   const { nodes, materials, scene } = useGLTF('/models/macbook-transformed.glb')
