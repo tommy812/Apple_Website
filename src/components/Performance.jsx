@@ -50,10 +50,10 @@ const Performance = () => {
 
 
                 const toVars = {};
-                if (pos.mobile.left !== 'undefined') toVars.left = `${pos.mobile.left}%`;
-                if (pos.mobile.right !== 'undefined') toVars.right = `${pos.mobile.right}%`;
-                if (pos.mobile.bottom !== 'undefined') toVars.bottom = `${pos.mobile.bottom}%`;
-                if (pos.mobile.transform !== 'undefined') toVars.transform = pos.mobile.transform;
+                if (pos.mobile.left !== undefined) toVars.left = `${pos.mobile.left}%`;
+                if (pos.mobile.right !== undefined) toVars.right = `${pos.mobile.right}%`;
+                if (pos.mobile.bottom !== undefined) toVars.bottom = `${pos.mobile.bottom}%`;
+                if (pos.mobile.transform !== undefined) toVars.transform = pos.mobile.transform;
 
                 tl.to(`.${pos.id}`, toVars, 0);
             });
@@ -77,10 +77,10 @@ const Performance = () => {
 
 
                 const toVars = {};
-                if (pos.desktop.left !== 'undefined') toVars.left = `${pos.desktop.left}%`;
-                if (pos.desktop.right !== 'undefined') toVars.right = `${pos.desktop.right}%`;
-                if (pos.desktop.bottom !== 'undefined') toVars.bottom = `${pos.desktop.bottom}%`;
-                if (pos.desktop.transform !== 'undefined') toVars.transform = pos.desktop.transform;
+                if (pos.desktop.left !== undefined) toVars.left = `${pos.desktop.left}%`;
+                if (pos.desktop.right !== undefined) toVars.right = `${pos.desktop.right}%`;
+                if (pos.desktop.bottom !== undefined) toVars.bottom = `${pos.desktop.bottom}%`;
+                if (pos.desktop.transform !== undefined) toVars.transform = pos.desktop.transform;
 
                 tl.to(`.${pos.id}`, toVars, 0);
             });
